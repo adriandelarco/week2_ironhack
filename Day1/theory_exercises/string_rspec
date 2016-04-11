@@ -1,0 +1,5 @@
+Rspec.describe "sring sumator" do
+	it "should sum two arrays" do
+		expect(Strings.new.sum("abc","def")).to eq("abcdef")
+	end
+end

@@ -1,0 +1,10 @@
+<span style='font-size: 30px'><a href='/hi'>Hola</a>, soy Adrián.</span>
+Hoy es <%= @now.strftime "%d/%m/%Y"%> y son las <%= @now.strftime "%H:%M:%S" %>
+
+ <% if Date.today.friday? %>
+	¡¡Hoy es Viernes!!
+ <% else %>
+ 	Hoy no es Viernes :(
+ <% end %>
+
+<img src='img.jpg' alt='fondo'/>

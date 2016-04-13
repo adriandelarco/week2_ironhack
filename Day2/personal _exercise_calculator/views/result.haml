@@ -1,0 +1,4 @@
+%h1 Calculator: result
+%form{:action => "/save_result", :method => "POST"}
+	%input{:type => "text", :name => "result", :value => @result}
+	%button{:type => "save", :id => "save_button", :value => "save"} Save

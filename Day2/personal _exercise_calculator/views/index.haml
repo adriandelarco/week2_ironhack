@@ -1,0 +1,11 @@
+%h1 Calculator
+%form{:action => "/result", :method => "POST"}
+	%label{:for => "input_number1"} Number 1 
+	%input{:type => "number", :name => "first_number", :id => "input_number1", :placeholder => " Insert number 1", :value => @file}
+	%span &
+	%label{:for => "input_number2"}  Number 2 
+	%input{:type => "number", :name => "second_number", :id => "input_number2", :placeholder => " Insert number 2"}
+	%button{:type => "submit", :name => "operation", :id => "add_button", :value => "add"} Sum
+	%button{:type => "submit", :name => "operation", :id => "substract_button", :value => "substract"} Substract
+	%button{:type => "submit", :name => "operation", :id => "multiply_button", :value => "multiply"} Multiply
+	%button{:type => "submit", :name => "operation", :id => "divide_button", :value => "divide"} Divide

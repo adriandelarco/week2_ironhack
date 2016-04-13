@@ -1,0 +1,16 @@
+%span Hola
+= @name
+%span .
+
+%span Tienes
+%span= @age
+%span años.
+
+- if @age >= 18
+	%span Puedes entrar al club.
+	%br/
+	%img{:src => "/happy.gif", :alt => "party gif"}/
+- else
+	%span NO puedes entrar al club.
+	%br/
+	%img{:src => "/sad.gif", :alt => "sad gif"}/

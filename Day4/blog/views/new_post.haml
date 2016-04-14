@@ -1,0 +1,13 @@
+%h1 Create post
+%form{:action => "/publish_post", :method => "POST"}
+	%label{:for => "title_input"}
+	%input{:id => "title_input", :type => "text", :name => "title", :placeholder => "Title go here"}/
+	%label{:for => "text_input"}
+	%input{:id => "text_input", :type => "textarea", :name => "text", :placeholder => "Insert your text"}/
+	%label{:for => "category_input"}
+	%input{:id => "category_input", :type => "text", :name => "category", :placeholder => "Category"}/
+	%label{:for => "author_input"}
+	%input{:id => "author_input", :type => "text", :name => "author", :placeholder => "author"}/
+	%button{:type => "submit", :id => "publish_button", :value => "publish"} Publish post
+%br/
+%a{:href => "/index"} Go back

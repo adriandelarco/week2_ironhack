@@ -1,0 +1,11 @@
+
+- @posts.each do |post|
+	- if post.id == @id.to_i
+		%h1
+			=post.title
+		%p
+			=post.text
+		%meta
+			=post.date
+			=post.category
+			=post.author

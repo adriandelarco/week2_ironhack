@@ -1,0 +1,16 @@
+%h1{:style => "color:#B30000; text-align:center"} Blog
+%h2{:style => "color:grey; text-align:center"} Welcome to the best blog.
+%br/
+%br/
+%div{:style => "color:black; margin:0 auto; position:relative; width: 40%"}
+	- @posts.each do |post|
+		%a{:href => "/post_details/#{post.id}"}
+			%article{:style => "margin: 20px; background-color: rgb(246, 246, 246);padding: 20px; box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1)"}
+				=post.title
+%div{:style => "float:right; font-size: 15px; width: 20%"}
+	%h3 Last posts
+	- @last_posts.each do |post|
+		%p
+			=post.title
+
+

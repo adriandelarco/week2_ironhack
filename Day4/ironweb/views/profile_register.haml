@@ -1,0 +1,19 @@
+%h1 Join to Ironhack
+%form{:action => "/profile/save_register", :method => "POST"}
+	%label{:for => "name_input"}
+	%input{:id => "name_input", :type => "text", :name => "name", :placeholder => "Insert your name"}/
+	%label{:for => "year_input"}
+	%input{:id => "year_input", :type => "number", :name => "year", :placeholder => "Insert your year"}/
+	%label{:for => "email_input"}
+	%input{:id => "email_input", :type => "email", :name => "email", :placeholder => "example@gmail.com"}/
+	%span Experience? - 
+	%input{:id => "exp_input", :type => "radio", :name => "exp", :value => "noob"}/
+	%span Noob
+	%input{:id => "exp_input", :type => "radio", :name => "exp", :value => "pro"}/
+	%span Pro
+	%label{:for => "country_input"}
+	%input{:id => "country_input", :type => "text", :name => "country", :placeholder => "spain"}/
+	%button{:type => "submit", :id => "speak_button", :value => "save"} That's me.
+%br/
+%span Not sure if you want join?
+%a{:href => "/index"} Back

@@ -1,0 +1,11 @@
+%h1 Courses
+	
+- @courses.each do |course|
+	- if @exp == "pro" && course.exp == true
+		%p
+			=course.name
+		%a{:href => "/courses/join/#{course.id}"} Unirse
+	- elsif @exp == "noob" && course.exp == false
+		%p
+			=course.name
+		%a{:href => "/courses/join/#{course.id}"} Unirse

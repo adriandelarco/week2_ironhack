@@ -1,0 +1,31 @@
+%h1 Your profile.
+%p You are registered in Ironhack.
+%p{:style => "color:blue"}
+	Your name is:
+	=@name
+%p{:style => "color:blue"}
+	And your age is:
+	=@age
+%p{:style => "color:blue"}
+	And your email is:
+	=@email
+%p{:style => "color:blue"}
+	And your country is:
+	=@country
+%p{:style => "color:blue"}
+	And your exp is:
+	=@exp
+%br/
+
+- if @course != nil
+	%p{:style => "color:green"}
+		You have joined to:
+		=@course.name
+	%a{:href => "/courses"} Change to another course.
+- else
+	%a{:href => "/courses"} Join to a course.
+%br/
+%br/
+%br/
+%span{:style => "color:red"} X
+%a{:href => "/delete", :style => "color:red"}Remove my account. 

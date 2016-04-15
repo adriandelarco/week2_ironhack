@@ -1,0 +1,5 @@
+%h1{:style => "color:#B30000; text-align:center"} Movies
+
+%div{:style => "width: 900px; margin: 0 auto"}
+	- @movies.each do |movie|
+		%img{:src => "#{movie[0][0]}", :alt => "#{movie[1][0]}", :style => "height: 400px; width: 280px;"}/

@@ -1,0 +1,5 @@
+%h1 Movie lovers
+%form{:action => "/movies", :method => "POST"}
+	%label{:for => "search_input"}
+	%input{:id => "search_input", :type => "text", :name => "search_term", :placeholder => "Which movie are you looking for?"}/
+	%button{:type => "submit", :id => "search_button", :value => "publish"} SEARCH
